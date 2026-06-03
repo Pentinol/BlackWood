@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header flex-header">
+        <div class="logo">
+            <h1>BLACKWOOD</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="flex-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Объекты</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container contacts-layout flex-layout">
+        <aside class="info-card flex-1">
+            <h2>СВЯЗЬ С НАМИ</h2>
+            <div class="info-block">
+                <p class="dev-info"><strong>Офис:</strong> Москва, Башня "Федерация", 75 этаж</p>
+                <p class="dev-info"><strong>Email:</strong> vip@blackwood.ru</p>
+                <p class="dev-info"><strong>Брокер:</strong> Александр Чернов</p>
+            </div>
+            
+            <div class="socials">
+                <a href="#">Telegram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+
+            <div class="additional-info">
+                <h3>ГРАФИК РАБОТЫ</h3>
+                <p>Private banking: 24/7</p>
+                <p>Офис: 10:00 - 20:00 (По записи)</p>
+                
+                <h3 class="faq-title">ЧАСТЫЕ ВОПРОСЫ</h3>
+                <ul class="faq-list">
+                    <li>Конфиденциальность сделки?</li>
+                    <li>Просмотр объектов за рубежом?</li>
+                    <li>Оплата в криптовалюте?</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="feedback-form flex-2">
+            <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+            <form action="#" method="POST" class="black-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Цель обращения</label>
+                    <select id="subject" name="subject">
+                        <option value="buy">Покупка резиденции</option>
+                        <option value="sell">Продажа объекта</option>
+                        <option value="invest">Инвестиции</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Детали (Опционально)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Опишите ваши пожелания..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent" class="consent-label">Согласие на обработку конфиденциальных данных</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Балашов Евгений 1ВР1 </p>
+    </footer>
+</body>
+</html>

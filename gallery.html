@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объекты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header flex-header">
+        <div class="logo">
+            <h1>BLACKWOOD</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="flex-nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Объекты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="page-header">
+            <h2>КАТАЛОГ РЕЗИДЕНЦИЙ</h2>
+            <div class="stats-panel flex-layout">
+                <span class="stat-item"> Объектов: <span id="image-counter">0</span></span>
+                <span class="stat-item"> Лайков: <span id="total-likes">0</span></span>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery">
+            <!-- карточка 1 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=36e2e8aaa002ab5d27236e2d47416e1c_l-5333776-images-thumbs&n=13" alt="Черная вилла в лесу" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">RESIDENCE "OBSIDIAN"</h3>
+                    <p class="image-date">Построено: 2023</p>
+                    <p class="image-description">Монолитный дом в стиле минимализм, интегрированный в хвойный лес</p>
+                </div>
+            </article>
+
+            <!-- карточка 2 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://pergola-russia.ru/wp-content/uploads/2024/catalog/podemnoe-gilotinnoe/podemnoe-gilotinnoe-osteklenie/ChatGPT-Image-11-dek.-2025-g.-10_20_56.png" alt="Современный дом стекло и бетон" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">VILLA "GLASS"</h3>
+                    <p class="image-date">Построено: 2022</p>
+                    <p class="image-description">Панорамное остекление и строгие линии. Идеальный баланс света и тени.</p>
+                </div>
+            </article>
+
+            <!-- карточка 3 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/ec/5e/ff/ec5eff0a59137ae7287b5b189e26d243.jpg" alt="Трехуровневая вилла" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="3"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">HOUSE "ELEVATION"</h3>
+                    <p class="image-date">Построено: 2024</p>
+                    <p class="image-description">Трехуровневая архитектура премиум-класса с переливным бассейном.</p>
+                </div>
+            </article>
+
+            <!-- карточка 4 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=c8213f452f5ae3f97113d2c40fa7bfd9_l-5245002-images-thumbs&n=13" alt="Скрытый дом в горах" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="4"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">MOUNTAIN SHELTER</h3>
+                    <p class="image-date">Построено: 2021</p>
+                    <p class="image-description">Дом-крепость из темного камня, расположенный на уединенном склоне.</p>
+                </div>
+            </article>
+
+            <!-- карточка 5 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=ef2ca90afdcb7366c24b91bc214607b3_l-9093405-images-thumbs&n=13" alt="Дом с темным деревом" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="5"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">TIMBER DARK</h3>
+                    <p class="image-date">Построено: 2023</p>
+                    <p class="image-description">Экстерьер из обожженного дерева (технология Shou Sugi Ban).</p>
+                </div>
+            </article>
+
+            <!-- карточка 6 -->
+            <article class="image-card photo">
+                <div class="card-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=9c96ba62c02c34767b59385b37a0641a-5235832-images-thumbs&n=13" alt="Особняк с ландшафтом" class="gallery-img" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="6"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">VILLA "HORIZON"</h3>
+                    <p class="image-date">Построено: 2024</p>
+                    <p class="image-description">Строгая симметрия и безупречный ландшафтный дизайн.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Балашов Евгений 1ВР1 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
